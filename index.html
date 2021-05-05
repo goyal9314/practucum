@@ -1,0 +1,752 @@
+<!doctpe html>
+<html>
+<head>
+ 
+<title>
+LCB
+</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="team.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+	<link rel="stylesheet" href="/w3css/3/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+
+<style>
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media all and (min-width: 600px) {
+      .aside { flex: 1; }
+    }
+
+  	.h1{
+  text-shadow: 2px 2px 5px white;
+  color: red;
+  
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+/* .navbar {
+  overflow: hidden;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  padding-left: 800;
+  margin-bottom: 0px;
+  width: 100%;
+  background-color: rgb(4, 2, 17);
+}
+
+li {
+  float: left;
+}
+
+.navbar a {
+  
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: rgb(4, 2, 17);
+  border-bottom: 2px solid white;
+} */
+.navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0; 
+ margin-bottom: 0px;
+  width: 100%;
+  overflow: hidden;
+  background-color:  rgb(4, 2, 17);
+}
+
+.navbar a {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 15px;
+ 
+}
+
+.navbar a:hover {
+  background-color: rgb(4, 2, 17);
+  border-bottom: 2px solid white;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* .navbar.responsive {position: relative;} */
+  /* .navbar.responsive .icon {
+    position: relative;
+    left: 0;
+    top: 0; */
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+.header img {
+float:left; 
+width:200px;
+height:150px;
+background:white;}
+
+
+.header h1{
+float:absolute;
+top:500px; 
+left:1000px;
+color:rgb(106, 26, 0);
+font-size:100px;}
+
+body{
+/* background:rgb(4, 2, 17); */
+background: white;
+
+/* background-image:url("iitp.webp"); */
+
+
+
+}
+.main {
+  padding: 16px;
+  margin-top: 150px;
+ 
+}
+.quote {
+ margin: auto;
+  background: rgb(4, 2, 17);
+  padding: 1em;
+  width: 50%;
+  border: 2px solid red;
+  border-radius: 1em;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  
+  color: white;
+}
+.gfg { 
+                text-align:center; 
+                font-size:40px; 
+                font-weight:bold; 
+                color:green; 
+            } 
+.theory {
+    color: black;
+    margin-left: 40;
+    margin-right: 60;
+    font-size: 25;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+</style>
+<script> 
+  function myFunction() { 
+      window.location.href("lcb.orgfree.com", "_self"); 
+  } 
+
+  function ShowHideDiv1() {
+  var chka = document.getElementById("chka1");
+  var chkb = document.getElementById("chkb1");
+  var chkc = document.getElementById("chkc1");
+  var chkd = document.getElementById("chkd1");
+  var dvtext = document.getElementById("dvtext1");
+  
+  if(chka.checked || chkb.checked || chkc.checked || chkd.checked){
+    dvtext.style.display = "block"
+  }
+}
+function ShowHideDiv2() {
+  var chka = document.getElementById("chka2");
+  var chkb = document.getElementById("chkb2");
+  var chkc = document.getElementById("chkc2");
+  var chkd = document.getElementById("chkd2");
+  var dvtext = document.getElementById("dvtext2");
+  
+  if(chka.checked || chkb.checked || chkc.checked || chkd.checked){
+    dvtext.style.display = "block"
+  }
+}
+function ShowHideDiv3() {
+  var chka = document.getElementById("chka3");
+  var chkb = document.getElementById("chkb3");
+  var chkc = document.getElementById("chkc3");
+  var chkd = document.getElementById("chkd3");
+  var dvtext = document.getElementById("dvtext3");
+  
+  if(chka.checked || chkb.checked || chkc.checked || chkd.checked){
+    dvtext.style.display = "block"
+  }
+}
+function ShowHideDiv4() {
+  var chka = document.getElementById("chka4");
+  var chkb = document.getElementById("chkb4");
+  var chkc = document.getElementById("chkc4");
+  var chkd = document.getElementById("chkd4");
+  var dvtext = document.getElementById("dvtext4");
+  
+  if(chka.checked || chkb.checked || chkc.checked || chkd.checked){
+    dvtext.style.display = "block"
+  }
+}
+function ShowHideDiv5() {
+  var chka = document.getElementById("chka5");
+  var chkb = document.getElementById("chkb5");
+  var chkc = document.getElementById("chkc5");
+  var chkd = document.getElementById("chkd5");
+  var dvtext = document.getElementById("dvtext5");
+  
+  if(chka.checked || chkb.checked || chkc.checked || chkd.checked){
+    dvtext.style.display = "block"
+  }
+}
+</script> 
+
+<body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="XuzqqFw4"></script>
+
+<!--<div class="header">
+<img src="LCB.jpg">
+<h1>Linear Combination of Boys<h1></div>-->
+
+
+
+  <div class="navbar" id="myTopnav">
+    <a href="#home">Home</a>
+    <a href="#team">Team</a>
+    <a href="#projects">Our Projects</a>
+    <a href="#home">Home</a>
+    <a href="#team">Team</a>
+    <a href="#projects">Our Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#joinus">Join us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
+
+  <a name="home"></a>
+  <div class="main">
+   <br>
+   <br>
+   <br>
+   <br>
+   <div class="h1">
+    <h1> <center>Theory</center></h1>
+  </div>
+
+<h2 style="color: red;"class="theory"><u>Introduction:</u></h2>
+
+<img class="center"  src="https://image.slidesharecdn.com/group8-161201093259/95/four-bar-mechanism-4-638.jpg?cb=1480584938" alt="Four-Bar">
+<br>
+<br>
+<div class="theory" >All mechanisms are used to convert one form of motion into another. A mechanism is basically obtained from a kinematic chain. And a chain is made up of several links and pairs. Any to elements can be combined such that there is
+  relative motion
+  between the two. The relative motion may be one of rotation, sliding or cylindrical or globular.
+
+  A chain is a collection of links and pairs. When we have four links with pinned contact or revolute pair betweern them (Relative angular motion) then we have a four bar chain as shown below.
+  <br>Note here we have 4 links. And any two of the links are
+  connected by a pinned joint forming a revolute pair. This implies that andy two links will have relative angular motion with the joint as a pivot. So in all there are 4 links and 4 pairs (Revolute). This is a four bar kinematic chain.
+
+  In order to obtain useful predictable motion for a given input, we need to convert this chain into a mechanism. For this we need to fix one link forming a four bar mechanism.
+</div>
+<h1 style="color: red;"><u>Grashoff's Law:</u></h1>
+<div class="theory">The four bar chain has 4 links. So each of these links may be fixed to obtain a different mechanism. Each of these mechanisms are referred to as an inversion of the four bar chain. As there are 4 links we can obtain 4 mechanisms.
+  Referring to the four bar chain shown below: s is the shortest link, l is the longest link and p and q are the remaining two links. In order to have at least one link having full rotation the links should satisfy Grashoff’s law where s+l <= p+
+    q.</div>
+    <h2 style="color: red;">Crank-Rocker Mechanism-</h2>
+    <div class="theory">when the shortest link is adjacent to the fixed link as in figures, we obtain a crank rocker mechanism. The shortest link serves as the crank and the link q which is opposite to it has oscilating motion about the pivot as shown
+
+    </div>
+    <br>
+    <img class="center" src="https://qphs.fs.quoracdn.net/main-qimg-66d6c56c04b9e88e2e003341df615f3d" alt="crank-rocker">
+    <br>
+    <h2 style="color: red;">Double Crank Mechanism-</h2>
+    <div class="theory"> When the shortest link is the fixed link, we obtain a double crank mechaism ie. both links p and l function as cranks.
+    </div>
+    <br>
+    <img class="center" src="https://qphs.fs.quoracdn.net/main-qimg-90e27b7e1ed25a5437994e525430645e" alt="double-crank">
+    <br>
+    <h2 style="color: red;">Double Rocker Mechanism-</h2>
+    <div class="theory">Finally, when s is opposite the fixed link, we obtain a double rocker mechanism. Links p and l have oscillating motion as shown.
+    </div>
+    <br>
+    <img class="center" src="https://qphs.fs.quoracdn.net/main-qimg-c6a403de0067091d644c821dbcbc6c5d" alt="double-rocker">
+    <br>
+    <h2 style="color: red;">Transmission Angle (μ):</h2>
+    <div class="theory">The angle between output link and coupler is known as transmission angle.
+    </div>
+    <br>
+    <img class="center" src="https://ars.els-cdn.com/content/image/1-s2.0-S0094114X01000672-gr3.gif" alt="transmission-angle">
+    <br>
+    <div class="theory">The optimum value of the transmission angle is 90
+      degree. Since the angle will be constantly changing during
+      the motion cycle of the mechanism, there will be a
+      position at which the transmission angle will deviate most
+      from 90 degree. In practice it has been found out that if
+      the maximum deviation of the transmission angle from 90
+      degree exceeds 40 or 50 degree (depending on the type
+      of application), the mechanism will lock. In certain cases
+      this maximum deviation must be kept within 20 degree
+      and in certain other applications maximum deviations of
+      up to 70 degree may be permissible. One must consider
+      the practical application of a mechanism in order to give a
+      limit to this deviation (whenever in doubt, try to keep this
+      deviation to less that 40 or 50 degree).
+
+
+    </div>
+
+</div>
+ 
+
+
+
+
+
+
+<div class = "gfg" onscroll = "myFunction()"> 
+</div> 
+<!-- Team page -->
+<a name="team"></a>
+<div class="container" >
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="h1">
+    <h1> <center>Nuremical Analysis</center></h1>
+  </div>
+  <br>
+  <br>
+
+</div>
+
+
+<br>
+<a name="projects"></a>
+<br>
+<br>
+<br><br>
+<br>
+
+<div class="container">
+<h1 class="h1"> <center>SolidWorks Analysis</center></h1>
+<br>
+<br>
+<br>
+<p>In this section we will showing Linear and angular displacement, postion, Accelaration Analysis for every link of different Mechanisms.</p>
+  
+    <h4>Double Rocker Mechanism</h4>
+
+    <div>
+    <h5>Crank Link</h5>
+    <img src="crank_dr_lie.png" width="60%" height="60%" alt="">
+    <img src="crank_dr_angular.png" width="60%" height="60%" alt="">
+    <br>
+    <br>
+    </div>
+
+    <div>
+      <h5>Coupler Link</h5>
+      <img src="coupler_dr_lieanr.png" width="60%" height="60%" alt="">
+      <img src="coupler_dr_ang.png" width="60%" height="60%" alt="">
+      <br>
+      <br>
+    </div>
+
+    <div>
+      <h5>Driven Link</h5>
+      <img src="driven_dr_linear.png" width="60%" height="60%" alt="">
+      <img src="driven_dr_ang.png" width="60%" height="60%" alt="">
+      <br>
+      <br>
+    </div>
+
+
+
+
+    <h4>Parallelogram Linkage</h4>
+    <div>
+    <h5>Crank Link</h5>
+    <img src="crank_parll_linear.png" width="60%" height="60%" alt="">
+    <img src="crank_parll_ang.png" width="60%" height="60%" alt="">
+    <br>
+    <br>
+    </div>
+
+    <div>
+      <h5>Rocker Link</h5>
+      <img src="rocker_pall_linear.png" width="60%" height="60%" alt="">
+      <img src="rocker_pall_ang.png" width="60%" height="60%" alt="">
+      <br>
+      <br>
+    </div>
+
+    <div>
+      <h5>Coupler Link</h5>
+      <img src="coupler_pall_liea.png" width="60%" height="60%" alt="">
+      <img src="coupler_pall_ang.png" width="60%" height="60%" alt="">
+      <br>
+      <br>
+    </div>
+
+
+    <h4>Crank Rocker Mechanism</h4>
+    <div>
+    <h5>Crank Link</h5>
+    <img src="crank_cr_linear.png" width="60%" height="60%" alt="">
+    <img src="crank_cr_ang.png" width="60%" height="60%" alt="">
+    <br>
+    <br>
+    </div>
+
+    <div>
+      <h5>Coupler Link</h5>
+      <img src="coupler_cr_linear.png" width="60%" height="60%" alt="">
+      <img src="coupler_cr_ang.png" width="60%" height="60%" alt="">
+      <br>
+      <br>
+    </div>
+
+    <div>
+      <h5>Rocker Link</h5>
+      <img src="rocker_cr_linear.png" width="60%" height="60%" alt="">
+      <img src="coupler_dr_ang.png" width="60%" height="60%" alt="">
+      <br>
+      <br>
+    </div>
+
+
+    <h4>Drag Link Mechanism</h4>
+    <div>
+    <h5>Crank Link</h5>
+    <img src="crank_dl_linear.png" width="60%" height="60%" alt="">
+    <img src="crank_dl_ang.png" width="60%" height="60%" alt="">
+    <br>
+    <br>
+    </div>
+
+    <div>
+      <h5>Coupler Link</h5>
+      <img src="coupler_dl_linear.png" width="60%" height="60%" alt="">
+      <img src="coupler_dl_ang.png" width="60%" height="60%" alt="">
+      <br>
+      <br>
+    </div>
+
+    <div>
+      <h5>Driven Link</h5>
+      <img src="driven_dl_linear.png" width="60%" height="60%" alt="">
+      <img src="driven_dl_ang.png" width="60%" height="60%" alt="">
+      <br>
+      <br>
+    </div>
+
+
+
+
+    
+      
+     
+        
+
+     
+     
+
+  </div>
+
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <a name="gallery"></a>
+  <div class="container">
+    <br><br><br><br> <br>
+  <h1 class="h1"> <center>Quiz</center></h1>
+  <br>
+  <br>
+  <br>
+<div style="margin: 0 auto; display: -ms-flexbox; /* IE10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
+padding: 0 4px;">
+ 
+</div>
+
+</div>
+
+
+
+<div style="margin-left: 50;">
+  <h5>Q.  If the link opposite to the shortest link is
+    fixed, what type of mechanism is
+    obtained?</h5>
+  <label for="chka1">
+    <input type="radio" id="chka1" name="chk" onclick="ShowHideDiv1()" />
+    Double crank mechanism
+  </label>
+  <br>
+  <label for="chkb1">
+    <input type="radio" id="chkb1" name="chk" onclick="ShowHideDiv1()" />
+    Linkage is not planar
+  </label>
+  <br>
+  <label for="chkc1">
+    <input type="radio" id="chkc1" name="chk" onclick="ShowHideDiv1()" />
+    Double rocker mechanism
+  </label>
+  <br>
+  <label for="chkd1">
+    <input type="radio" id="chkd1" name="chk" onclick="ShowHideDiv1()" />
+    Crank rocker mechanism
+  </label>
+</div>
+<div id="dvtext1" style="display: none">
+
+<h5 style="margin-left: 30;">Ans is : Double rocker mechanism</h5>
+</div>
+  
+<br>
+<br>
+<div style="margin-left: 50;">
+  <h5>Q. If the s+l=p+q, what is the type of linkage?</h5>
+  <label for="chka2">
+    <input type="radio" id="chka2" name="chk" onclick="ShowHideDiv2()" />
+    Trapezium
+  </label>
+  <br>
+  <label for="chkb2">
+    <input type="radio" id="chkb2" name="chk" onclick="ShowHideDiv2()" />
+    Parallelogram 
+  </label>
+  <br>
+  <label for="chkc2">
+    <input type="radio" id="chkc2" name="chk" onclick="ShowHideDiv2()" />
+    circular 
+  </label>
+  <br>
+  <label for="chkd2">
+    <input type="radio" id="chkd2" name="chk" onclick="ShowHideDiv2()" />
+    6 bar
+  </label>
+</div>
+<div id="dvtext2" style="display: none">
+
+  <h5 style="margin-left: 30;">Ans is : Parallelogram</h5>
+</div><br>
+<br>
+<div style="margin-left: 50;">
+  <h5>Q. A planar closed Kinetic chain is formed with rigid links PQ= 2.0 m, QR = 3.0 m, RS = 2.5 m and SP = 2.7 m with all revolute joints. The link to be fixed to obtain a double rocker (rocker-rocker) mechanism is</h5>
+  <label for="chka3">
+    <input type="radio" id="chka3" name="chk" onclick="ShowHideDiv3()" />
+    PQ
+  </label>
+  <br>
+  <label for="chkb3">
+    <input type="radio" id="chkb3" name="chk" onclick="ShowHideDiv3()" />
+    QR
+  </label>
+  <br>
+  <label for="chkc3">
+    <input type="radio" id="chkc3" name="chk" onclick="ShowHideDiv3()" />
+    RS
+  </label>
+  <br>
+  <label for="chkd3">
+    <input type="radio" id="chkd3" name="chk" onclick="ShowHideDiv3()" />
+    SP
+  </label>
+</div>
+<div id="dvtext3" style="display: none">
+
+<h5>Ans is </h5>
+</div><br>
+<br>
+<br>
+<div style="margin-left: 50;">
+  <h5>Q. If the opposite links of a four bar linkage are equal, the links will form a</h5>
+  <label for="chka4">
+    <input type="radio" id="chka4" name="chk" onclick="ShowHideDiv4()" />
+    Triangle
+  </label>
+  <br>
+  <label for="chkb4">
+    <input type="radio" id="chkb4" name="chk" onclick="ShowHideDiv4()" />
+    Rectangle
+  </label>
+  <br>
+  <label for="chkc4">
+    <input type="radio" id="chkc4" name="chk" onclick="ShowHideDiv4()" />
+    parallelogram 
+  </label>
+  <br>
+  <label for="chkd4">
+    <input type="radio" id="chkd4" name="chk" onclick="ShowHideDiv4()" />
+    Pentagon
+  </label>
+</div>
+<div id="dvtext4" style="display: none">
+
+<h5>Ans is </h5>
+</div><br>
+<br>
+<br>
+<div style="margin-left: 50;">
+  <h5>Q. It is planned to construct a four bar mechanism ABCD with length AB= 60 mm, BC = 100 mm, CD = 70 mm and fixed link AD = 200mm. If at least one link is required to have a complete rotation, the mechanism is</h5>
+  <label for="chka5">
+    <input type="radio" id="chka5" name="chk" onclick="ShowHideDiv5()" />
+    Of crank Rocker type
+  </label>
+  <br>
+  <label for="chkb5">
+    <input type="radio" id="chkb5" name="chk" onclick="ShowHideDiv5()" />
+    of double crank type 
+  </label>
+  <br>
+  <label for="chkc5">
+    <input type="radio" id="chkc5" name="chk" onclick="ShowHideDiv5()" />
+    of double Rocker type impossible to construct
+  </label>
+  <br>
+  <label for="chkd5">
+    <input type="radio" id="chkd5" name="chk" onclick="ShowHideDiv5()" />
+    None
+  </label>
+</div>
+<div id="dvtext5" style="display: none">
+
+<h5>Ans is </h5>
+</div><br>
+<br>
+<br>
+<br><br><br>
+
+<div class="container" >
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="h1">
+    <h1> <center>References</center></h1>
+  </div>
+  <br>
+  <br>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br>
+</body>
+</html>
